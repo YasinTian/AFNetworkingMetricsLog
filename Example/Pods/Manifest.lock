@@ -1,16 +1,37 @@
 PODS:
-  - AFNetworkingMetricsLog (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AFNetworkingMetricsLog (0.1.0):
+    - AFNetworking (~> 4.0.1)
 
 DEPENDENCIES:
   - AFNetworkingMetricsLog (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   AFNetworkingMetricsLog:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworkingMetricsLog: 605ae9b26f2142f85f2f0ebfbf0608c07ed9d9a6
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AFNetworkingMetricsLog: d3e8c7bc8242641463f0d6dbd3e8f125ff584430
 
-PODFILE CHECKSUM: 3511e43435a259bc82dc22299d64aa4b288dbf26
+PODFILE CHECKSUM: 2e418b9af2c013b995590ff0df395d3bd5b22e19
 
 COCOAPODS: 1.9.0

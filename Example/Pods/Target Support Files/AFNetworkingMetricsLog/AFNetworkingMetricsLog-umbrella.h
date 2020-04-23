@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "AFHTTPSessionManager+Log.h"
+#import "AFNetworkingDefaultLogger.h"
+#import "AFNetworkingDefaultModel.h"
 
 FOUNDATION_EXPORT double AFNetworkingMetricsLogVersionNumber;
 FOUNDATION_EXPORT const unsigned char AFNetworkingMetricsLogVersionString[];

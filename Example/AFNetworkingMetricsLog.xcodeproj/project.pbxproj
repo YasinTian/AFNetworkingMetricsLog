@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		01AE4BC65F7693DB822A5B4A /* Pods-AFNetworkingMetricsLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingMetricsLog_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AFNetworkingMetricsLog_Tests/Pods-AFNetworkingMetricsLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		15356AE3730E2A3A516D99F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1DFFD1A0EAF16CA53B42D7C1 /* AFNetworkingMetricsLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AFNetworkingMetricsLog.podspec; path = ../AFNetworkingMetricsLog.podspec; sourceTree = "<group>"; };
+		15356AE3730E2A3A516D99F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1DFFD1A0EAF16CA53B42D7C1 /* AFNetworkingMetricsLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFNetworkingMetricsLog.podspec; path = ../AFNetworkingMetricsLog.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30CF2E9EA31BBDF7B1EB685F /* Pods-AFNetworkingMetricsLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingMetricsLog_Example.release.xcconfig"; path = "Target Support Files/Pods-AFNetworkingMetricsLog_Example/Pods-AFNetworkingMetricsLog_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AFNetworkingMetricsLog_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNetworkingMetricsLog_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		80B9F8C16DABBDE4553F9848 /* Pods-AFNetworkingMetricsLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingMetricsLog_Tests.release.xcconfig"; path = "Target Support Files/Pods-AFNetworkingMetricsLog_Tests/Pods-AFNetworkingMetricsLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3E739597F38EB41546BF443 /* Pods-AFNetworkingMetricsLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingMetricsLog_Example.debug.xcconfig"; path = "Target Support Files/Pods-AFNetworkingMetricsLog_Example/Pods-AFNetworkingMetricsLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EF582FAC8730EF257DDB314D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EF582FAC8730EF257DDB314D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FB7A427E39413511B2C374D5 /* Pods_AFNetworkingMetricsLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkingMetricsLog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				01AE4BC65F7693DB822A5B4A /* Pods-AFNetworkingMetricsLog_Tests.debug.xcconfig */,
 				80B9F8C16DABBDE4553F9848 /* Pods-AFNetworkingMetricsLog_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = YasinTian;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4EET99S37L;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +305,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AFNetworkingMetricsLog_Example/Pods-AFNetworkingMetricsLog_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/AFNetworkingMetricsLog/AFNetworkingMetricsLog.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworkingMetricsLog.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +499,7 @@
 			baseConfigurationReference = B3E739597F38EB41546BF443 /* Pods-AFNetworkingMetricsLog_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4EET99S37L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFNetworkingMetricsLog/AFNetworkingMetricsLog-Prefix.pch";
 				INFOPLIST_FILE = "AFNetworkingMetricsLog/AFNetworkingMetricsLog-Info.plist";
@@ -510,6 +516,7 @@
 			baseConfigurationReference = 30CF2E9EA31BBDF7B1EB685F /* Pods-AFNetworkingMetricsLog_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4EET99S37L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFNetworkingMetricsLog/AFNetworkingMetricsLog-Prefix.pch";
 				INFOPLIST_FILE = "AFNetworkingMetricsLog/AFNetworkingMetricsLog-Info.plist";

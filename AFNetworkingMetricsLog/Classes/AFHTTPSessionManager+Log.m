@@ -26,14 +26,10 @@
 }
 
 - (void)startLog {
-    if (@available(iOS 10.0, *)) {
-        __weak typeof(self) weakSelf = self;
-        [self setTaskDidFinishCollectingMetricsBlock:^(NSURLSession * _Nonnull session, NSURLSessionTask * _Nonnull task, NSURLSessionTaskMetrics * _Nullable metrics) {
-            [weakSelf taskLogWithSession:session task:task metrics:metrics];
-        }];
-    } else {
-        NSLog(@"AFHTTPSessionLogger-Error-Only supports versions above 10.0");
-    }
+    __weak typeof(self) weakSelf = self;
+    [self setTaskDidFinishCollectingMetricsBlock:^(NSURLSession * _Nonnull session, NSURLSessionTask * _Nonnull task, NSURLSessionTaskMetrics * _Nullable metrics) {
+        [weakSelf taskLogWithSession:session task:task metrics:metrics];
+    }];
 }
 
 - (void)stopLog {

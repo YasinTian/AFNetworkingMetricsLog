@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworkingMetricsLog (0.1.0)
+
+DEPENDENCIES:
+  - AFNetworkingMetricsLog (from `../`)
+
+EXTERNAL SOURCES:
+  AFNetworkingMetricsLog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworkingMetricsLog: 605ae9b26f2142f85f2f0ebfbf0608c07ed9d9a6
+
+PODFILE CHECKSUM: 3511e43435a259bc82dc22299d64aa4b288dbf26
+
+COCOAPODS: 1.9.0

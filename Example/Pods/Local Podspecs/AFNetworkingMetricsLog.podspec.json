@@ -1,0 +1,22 @@
+{
+  "name": "AFNetworkingMetricsLog",
+  "version": "0.1.0",
+  "summary": "A short description of AFNetworkingMetricsLog.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/YasinTian/AFNetworkingMetricsLog",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "YasinTian": "1113456051@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/YasinTian/AFNetworkingMetricsLog.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AFNetworkingMetricsLog/Classes/**/*"
+}

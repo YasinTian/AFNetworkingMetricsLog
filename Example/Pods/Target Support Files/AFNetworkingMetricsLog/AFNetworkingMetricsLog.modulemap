@@ -1,0 +1,6 @@
+framework module AFNetworkingMetricsLog {
+  umbrella header "AFNetworkingMetricsLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
